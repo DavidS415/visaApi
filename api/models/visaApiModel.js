@@ -1,10 +1,10 @@
 'use strict';
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-
-var VisaSchema = new Schema({
-  type: {
+const mongoose = require('mongoose');
+const VisaSchema = new mongoose.Schema({
+  visa: {
+    type: String
+  },
+  summary: {
     type: String
   },
   info: {
@@ -15,4 +15,5 @@ var VisaSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Visas', VisaSchema);
+const Visa = mongoose.model('Visas', VisaSchema);
+module.exports = Visa;

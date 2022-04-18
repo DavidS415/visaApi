@@ -1,32 +1,36 @@
 'use strict';
 
 const { type } = require('express/lib/response');
+const Visa = require('../models/visaApiModel');
 
+//return all visas
 
-var mongoose = require('mongoose'),
-  Visa = mongoose.model('Visas');
-
-exports.list_all_visas = function(req, res) {
-  Visa.find({}, function(err, visa) {
-    if (err)
+const allVisas = (req, res) => {
+  Visa.find({}, function(err, allVisasListed){
+    if (err) {
       res.send(err);
-    res.json(visa);
-  });
-};
+    } else {
+      res
+        .json(allVisasListed)
+        .status(200);
+    }
+  })
+}
 
-exports.add_a_visa = function(req, res) {
-    var new_visa = new Visa(req.body);
-    new_visa.save(function(err, visa) {
-      if (err)
-        res.send(err);
-      res.json(visa);
-    });
-  };
-
-exports.read_a_visa = function(req, res) {
-  Visa.findOne({}, function(err, visa) {
-    if (err)
+const findThisVisa = (req, res) => {
+  const visaName = req.params.name;
+  Visa.findOne({ visa: visaName }, function(err, visaDetails) {
+    if (err) {
       res.send(err);
-    res.json(visa);
-  });
-};
+    } else {
+      res
+        .json(visaDetails)
+        .status(200);
+    }
+  })
+}
+
+module.exports = {
+  allVisas,
+  findThisVisa
+}

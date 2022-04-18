@@ -1,14 +1,10 @@
-'use strict';
-module.exports = function(app) {
-  var visaApi = require('../controllers/visaApiController');
+const express = require('express');
+const { route } = require('express/lib/application');
+const router = express.Router();
 
-  // API Routes
-  app.route('/visas')
-    .get(visaApi.list_all_visas)
-    .post(visaApi.add_a_visa);
+const { allVisas, findThisVisa } = require('../controllers/visaApiController');
 
+router.get('/visas', allVisas);
+router.get('/visas/:name', findThisVisa);
 
-  app.route('/visas/:visaId')
-    .get(visaApi.read_a_visa);
-
-};
+module.exports = router;

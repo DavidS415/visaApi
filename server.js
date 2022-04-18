@@ -1,24 +1,21 @@
-var express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000,
-  mongoose = require('mongoose'),
-  Visa = require('./api/models/visaApiModel'), //created model loading here
-  bodyParser = require('body-parser');
-  
-//url connection
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://visaUser:3k8U9Jl4ejnt25Rr@formsurvey1.dtdgc.mongodb.net/visa_api?retryWrites=true&w=majority"); 
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+bodyParser = require('body-parser');
+
+// Mongo DB conncetion
+mongoose
+    .connect('mongodb+srv://visaUser:3k8U9Jl4ejnt25Rr@formsurvey1.dtdgc.mongodb.net/visa_api?retryWrites=true&w=majority')
+    .then(() => console.log('e don connect'))
+    .catch(err => console.log(err));
 
 
+//BodyParsing
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-
-var routes = require('./api/routes/visaApiRoutes'); //importing route
-routes(app); //register the route
-
-
-app.listen(port);
-
-
-console.log('API server started on port: ' + port);
+//Routes
+app.use('/', require('./api/routes/visaApiRoutes'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, console.log("Server has started at port " + PORT))
