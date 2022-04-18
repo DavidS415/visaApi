@@ -4,9 +4,6 @@ const VisaSchema = new mongoose.Schema({
   visa: {
     type: String
   },
-  summary: {
-    type: String
-  },
   info: {
     type: String
   },
