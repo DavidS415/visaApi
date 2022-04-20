@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 bodyParser = require('body-parser');
+var cors = require('cors')
+
+app.use(cors())
 
 // Mongo DB conncetion
 mongoose
@@ -17,5 +20,5 @@ app.use(bodyParser.json());
 
 //Routes
 app.use('/', require('./api/routes/visaApiRoutes'));
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log("Server has started at port " + PORT))
