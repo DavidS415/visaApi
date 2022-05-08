@@ -1,7 +1,6 @@
-import './App.css';
 import React, { Component } from 'react';
 
-class App extends Component {
+class Visas extends Component {
   state = {
     visa: null,
     info: '',
@@ -28,11 +27,20 @@ class App extends Component {
   render() {
     const titleVisas = (
       <div>
-        <h1>Learn more about US work visas</h1>
+        <h1 class="font-weight-light">Learn more about US work visas</h1>
       </div>
     );
     const visaSelect = (
-      <div>
+      <div class="container">
+      <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+            <img
+              class="img-fluid rounded mb-4 mb-lg-0"
+              src="http://placehold.it/900x400"
+              alt=""
+            />
+          </div>
+      <div class="col-lg-5">
         <label for='visas'>Select a visa type:</label>
         <select name='visas' id='visas' onChange={this.callApi}>
           <option value=''>--Select--</option>
@@ -42,17 +50,20 @@ class App extends Component {
           <option value='E-2'>E-2</option>
           <option value='E-2C'>E-2C</option>
         </select>
-        {/*<button onClick={this.callApi}>
-          Learn more
-    </button>*/}
+      </div>
+      </div>
       </div>
     );
     const visaResults = (
-      <div>
+      <div class="container">
+        <div class="row align-items-center my-5">
+      <div class="col-lg-7">
           <h3>{this.state.visa}</h3>
           <h4>Info about the {this.state.visa} visa:</h4>
           <p>{this.state.info}</p>
           <p>For more information click <a href={this.state.url}>here</a></p>
+      </div>
+      </div>
       </div>
     );
     if (this.state.visa != null) {
@@ -64,4 +75,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default Visas;
