@@ -15,10 +15,9 @@ function Api() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">How to use our API:</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Call https://api.incipere.io/visas for all visa info.
+              Call https://api.incipere.io/visas/"visa name" for info on a specific visa. 
+              For example https://api.incipere.io/visa/H-1B will return info on the H-1B visa.
             </p>
           </div>
         </div>
