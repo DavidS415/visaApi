@@ -8,10 +8,11 @@ class Student extends Component {
   };
 
   callApi = async () => {
+    const URL = process.env.REACT_APP_BASE_URL;
     let element = document.getElementById('visas');
     const currentVisa = element.value;
     const idRef = currentVisa;
-    const response = await fetch('http://localhost:5000/visas/' + idRef);
+    const response = await fetch(URL + idRef);
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     
