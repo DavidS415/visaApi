@@ -1,4 +1,5 @@
 import React from "react";
+import api from "../images/api.jpeg";
 
 function Api() {
   return (
@@ -41,7 +42,7 @@ function Api() {
           <div class="col-lg-6">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/api.jpeg"
+              src={api}
               alt=""
             />
           </div>

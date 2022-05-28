@@ -1,4 +1,9 @@
 import React from "react";
+import nyc from "../images/nyc.jpeg";
+import working from "../images/working.jpeg";
+import travel from "../images/travel.jpg";
+import logo192 from "../images/logo192.png";
+
 
 function Home() {
   return (
@@ -8,7 +13,7 @@ function Home() {
           <div class="col-lg-6">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/nyc.jpeg"
+              src={nyc}
               alt=""
             />
           </div>
@@ -48,7 +53,7 @@ function Home() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/working.jpeg"
+              src={working}
               alt=""
             />
           </div>
@@ -59,7 +64,7 @@ function Home() {
           <div class="col-lg-4">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/travel.jpg"
+              src={travel}
               alt=""
             />
           </div>
@@ -109,7 +114,7 @@ function Home() {
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/logo192.png"
+              src={logo192}
               alt="Sponsor 1 logo"
             /><br/>
             <a href='/'>Sponsor 1</a>
@@ -117,7 +122,7 @@ function Home() {
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/logo192.png"
+              src={logo192}
               alt="Sponsor 1 logo"
             /><br/>
             <a href='/'>Sponsor 2</a>
@@ -125,7 +130,7 @@ function Home() {
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/logo192.png"
+              src={logo192}
               alt="Sponsor 1 logo"
             /><br/>
             <a href='/'>Sponsor 3</a>
@@ -133,7 +138,7 @@ function Home() {
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/logo192.png"
+              src={logo192}
               alt="Sponsor 1 logo"
             /><br/>
             <a href='/'>Sponsor 4</a>

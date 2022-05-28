@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../images/logo.png";
 
 function Navigation() {
   return (
@@ -7,7 +8,7 @@ function Navigation() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            <img src='/logo.png' alt='Logo'/> USWorkVisa.us
+            <img src={logo} alt='Logo'/> USWorkVisa.us
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">

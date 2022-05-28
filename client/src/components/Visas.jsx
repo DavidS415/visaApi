@@ -1,4 +1,5 @@
 import React from 'react';
+import business from "../images/business.jpeg";
 
 function Visas() {
     return (
@@ -34,7 +35,7 @@ function Visas() {
               </p>
               <img
                 class="img-fluid rounded mb-4 mb-lg-0"
-                src="/business.jpeg"
+                src={business}
                 alt=""
               />
             </div>
