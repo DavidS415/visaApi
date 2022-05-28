@@ -2,13 +2,17 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 bodyParser = require('body-parser');
-var cors = require('cors')
+var cors = require('cors');
+const dotenv = require("dotenv");
+dotenv.config();
 
 app.use(cors())
 
 // Mongo DB conncetion
+const database = process.env.MONGOLAB_URI;
+
 mongoose
-    .connect('mongodb+srv://visaUser:3k8U9Jl4ejnt25Rr@formsurvey1.dtdgc.mongodb.net/visa_api?retryWrites=true&w=majority')
+    .connect(database, {useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => console.log('e don connect'))
     .catch(err => console.log(err));
 
