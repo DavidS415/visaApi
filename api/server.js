@@ -19,6 +19,6 @@ app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 //Routes
-app.use('/', require('./api/routes/visaApiRoutes'));
+app.use('/', require('./routes/visaApiRoutes'));
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log("Server has started at port " + PORT))

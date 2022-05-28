@@ -9,6 +9,10 @@ import {
   Home,
   Visas,
   Api,
+  Temporary,
+  Permanent,
+  Student,
+  Other,
 } from "./components";
 
 ReactDOM.render(
@@ -18,6 +22,10 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/visas" element={<Visas />} />
+      <Route path="/visas/temporary" element={<Temporary />} />
+      <Route path="/visas/permanent" element={<Permanent />} />
+      <Route path="/visas/student" element={<Student />} />
+      <Route path="/visas/other" element={<Other />} />
       <Route path="/api" element={<Api />} />
     </Routes>
   </Router>,

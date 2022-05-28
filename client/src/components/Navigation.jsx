@@ -7,7 +7,7 @@ function Navigation() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            US Work Visa Information
+            <img src='/logo.png' alt='Logo'/> USWorkVisa.us
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
