@@ -74,7 +74,7 @@ class Student extends Component {
                 <tr>
                   <td>{this.state.visa}</td>
                   <td>{this.state.info}</td>
-                  <td>{this.state.url}</td>
+                  <td><a href={this.state.url}>{this.state.url}</a></td>
                 </tr>
               </tbody>
             </table>
