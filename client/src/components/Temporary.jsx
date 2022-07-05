@@ -52,15 +52,36 @@ class Temporary extends Component {
           <div className="col-sm-10 text-center">
             <br></br>
             <h2 className='display-4'>Temporary Work Visas</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+              In order for you to come to the United States lawfully as a nonimmigrant to work temporarily, your prospective employer must generally file a nonimmigrant petition on your behalf with USCIS. 
+
+              There are a variety of temporary work visas available to workers depending on the type of work you are planning to perform, the model or duration of your work in the United States, professional or education background, as well as country of origin. 
+
+              For additional information on a temporary visa type please see the list below and select the one that applies to you. 
+            </p>
             <label for='visas'>Select a visa type:</label>
               <select name='visas' id='visas' onChange={this.callApi}>
                 <option value=''>--Select--</option>
-                <option value='H-1B'>H-1B</option>
-                <option value='CW-1'>CW-1</option>
-                <option value='E-1'>E-1</option>
-                <option value='E-2'>E-2</option>
-                <option value='E-2C'>E-2C</option>
+                <option value='CW-1'>CW-1 CNMI-Only Transitional Worker</option>
+                <option value='E-1'>E-1 Treaty Traders</option>
+                <option value='E-2'>E-2 Treaty Investors</option>
+                <option value='E-2C'>E-2C CNMI-Only Investor</option>
+                <option value='E-3'>E-3 Specialty Occupation Workers from Australia</option>
+                <option value='H-1B'>H-1B Specialty Occupations</option>
+                <option value='H-2A'>H-2A Temporary Agricultural Workers</option>
+                <option value='H-2B'>H-2B Temporary Non-Agricultural Workers</option>
+                <option value='H-3'>H-3 Nonimmigrant Trainee</option>
+                <option value='I'>I Representatives of Foreign Media</option>
+                <option value='L-1A'>L-1A Intracompany Transferee Executive or Manager</option>
+                <option value='L-1B'>L-1B Intracompany Transferee Specialized Knowledge</option>
+                <option value='O-1'>O-1 Visa: Individuals with Extraordinary Ability or Achievement</option>
+                <option value='P-1A'>P-1A Athlete</option>
+                <option value='P-1B'>P-1B Member of an Internationally Recognized Entertainment Group</option>
+                <option value='P-2'>P-2 Entering to Perform Under a Reciprocal Exchange Program</option>
+                <option value='P-3'>P-3 Artist or Entertainer</option>
+                <option value='Q'>Q Cultural Exchange</option>
+                <option value='R-1'>R-1 Nonimmigrant Religious Workers</option>
+                <option value='TN'>TN NAFTA Professionals</option>
               </select>
             <table class="table table-bordered table-dark table-hover">
               <thead>
