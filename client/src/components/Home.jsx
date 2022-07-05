@@ -72,7 +72,7 @@ function Home() {
             <h1 class="font-weight-light">Types of Visas:</h1>
             <ul>
               <li class='font-weight-bold'>
-                <a href='/' title="Click here for more information">Permanent Worker Visas</a>
+                <a href='/visas/permanent' title="Click here for more information">Permanent Worker Visas</a>
                 <p class='font-weight-normal'>
                   Accoding to USCIS approximately 140,000 immigrant visas are available each fiscal year for noncitizens (and their spouses and children) who seek to immigrate based on their job skills. 
                   Some immigrant visa preferences require you to already have a job offer from a U.S. employer. 
@@ -80,7 +80,7 @@ function Home() {
                 </p>
               </li>
               <li class='font-weight-bold'>
-                <a href='/' title="Click here for more information">Temporary Worker Visas</a>
+                <a href='/visas/temporary' title="Click here for more information">Temporary Worker Visas</a>
                 <p class='font-weight-normal'>
                   Most temporary work or nonimmigrant work visas are dependent on a job based in the United States and as such your employer must file the petition on your behalf or provide supporting documents of the petition.
                   Temporary work visas are issued to indivduals (and in some cases their families as dependents) based on a number of qualifications such as a specialty occupation, an intracompany transfer for executives or managers, and other indivuals with extraordinary abilities in a variety of areas from art to sports to academics.
@@ -88,7 +88,7 @@ function Home() {
                 </p>
               </li>
               <li class='font-weight-bold'>
-                <a href='/' title="Click here for more information">Student Visas and Work Authorization</a>
+                <a href='/visas/student' title="Click here for more information">Student Visas and Work Authorization</a>
                 <p class='font-weight-normal'>
                   The United States offers visas for Academic Students (known as F-1 visa), Vocational Students (known as M-1 visa), and Exchange Visitors (konw as J-1 visa).
                   Some of these visas have implied work authorization as part of their program like certain exchanges while others provide elgiblity requirements for students to obtain work visas during our after their education is completed.
@@ -96,7 +96,7 @@ function Home() {
                 </p>
               </li>
               <li class='font-weight-bold'>
-                <a href='/' title="Click here for more information">Asylum and Other</a>
+                <a href='/visas/other' title="Click here for more information">Asylum and Other</a>
                 <p class='font-weight-normal'>
                   Individuals who have been granted Asylum in the United States are elgible to work once applying for and recieving a valid Employment Authorization Document.
                   There are other indivduals who are elgible for similar Employment Authorization Documents (often called EADs).
