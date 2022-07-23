@@ -52,15 +52,20 @@ class Student extends Component {
           <div className="col-sm-10 text-center">
             <br></br>
             <h2 className='display-4'>Student Visas</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+              In order to study in the United States as a full time student a student visa is generally required. 
+              There are two kinds of student visas (F-1 and M-1) that give a person the ability two enter the United States as a student. 
+              If a student wishes to work well studying (or in certain cases after graduating) they must obtain a separate work authorization. 
+              For information both student visas and the related work authorization select a visa below. 
+            </p>
             <label for='visas'>Select a visa type:</label>
               <select name='visas' id='visas' onChange={this.callApi}>
                 <option value=''>--Select--</option>
-                <option value='H-1B'>H-1B</option>
-                <option value='CW-1'>CW-1</option>
-                <option value='E-1'>E-1</option>
-                <option value='E-2'>E-2</option>
-                <option value='E-2C'>E-2C</option>
+                <option value='F-1'>F-1</option>
+                <option value='M-1'>M-1</option>
+                <option value='CPT'>CPT</option>
+                <option value='OPT'>OPT</option>
+                <option value='STEM-OPT'>STEM-OPT</option>
               </select>
             <table class="table table-bordered table-dark table-hover">
               <thead>
