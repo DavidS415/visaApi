@@ -3,6 +3,7 @@ export { default as Home } from "./Home";
 export { default as Visas } from "./Visas";
 export { default as Api } from "./Api";
 export { default as Header } from "./Header";
+export { default as Footer } from "./Footer";
 export { default as Temporary } from "./Temporary";
 export { default as Permanent } from "./Permanent";
 export { default as Student } from "./Student";

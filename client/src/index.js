@@ -13,6 +13,7 @@ import {
   Permanent,
   Student,
   Other,
+  Footer,
 } from "./components";
 
 ReactDOM.render(
@@ -28,6 +29,7 @@ ReactDOM.render(
       <Route path="/visas/other" element={<Other />} />
       <Route path="/api" element={<Api />} />
     </Routes>
+    <Footer />
   </Router>,
 
   document.getElementById("root")
