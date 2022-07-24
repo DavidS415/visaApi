@@ -53,16 +53,17 @@ class Other extends Component {
             <br></br>
             <h2 className='display-4'>Other Types of Visas</h2>
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              Other options for working in the United States include temporary business visitor visas or waivers but these are generally only valid for limited periods (less than one year). 
+              Refugees and Asylum seekers may also be eligible to work in the United States and obtain Employment Authorization Documents.
             </p>
             <label for='visas'>Select a visa type:</label>
               <select name='visas' id='visas' onChange={this.callApi}>
                 <option value=''>--Select--</option>
-                <option value='H-1B'>H-1B</option>
-                <option value='CW-1'>CW-1</option>
-                <option value='E-1'>E-1</option>
-                <option value='E-2'>E-2</option>
-                <option value='E-2C'>E-2C</option>
+                <option value='B-1'>B-1</option>
+                <option value='WB'>WB</option>
+                <option value='GB'>GB</option>
+                <option value='REFUGEE'>REFUGEE</option>
+                <option value='ASYLUM'>ASYLUM</option>
               </select>
             <table class="table table-bordered table-dark table-hover">
               <thead>
