@@ -115,33 +115,33 @@ function Home() {
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src={logo192}
-              alt="Sponsor 1 logo"
+              alt="Partner 1 logo"
             /><br/>
-            <a href='/'>Sponsor 1</a>
+            <a href='/'>Partner 1</a>
           </div>
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src={logo192}
-              alt="Sponsor 1 logo"
+              alt="Partner 1 logo"
             /><br/>
-            <a href='/'>Sponsor 2</a>
+            <a href='/'>Partner 2</a>
           </div>
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src={logo192}
-              alt="Sponsor 1 logo"
+              alt="Partner 1 logo"
             /><br/>
-            <a href='/'>Sponsor 3</a>
+            <a href='/'>Partner 3</a>
           </div>
           <div class="col-sm-3 text-center">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src={logo192}
-              alt="Sponsor 1 logo"
+              alt="Partner 1 logo"
             /><br/>
-            <a href='/'>Sponsor 4</a>
+            <a href='/'>Partner 4</a>
           </div>
         </div>
       </div>
