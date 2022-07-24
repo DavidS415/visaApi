@@ -6,7 +6,7 @@ function Footer() {
             <div class="row bg-secondary">
                 <div class="col-sm-4 text-center font-weight-bold">
                     <p>
-                        Contact Us
+                        <a href="mailto:applicationmailbox1860@gmail.com">Contact Us</a>
                     </p>
                     <p>
                         USworkvsia.us 2022
